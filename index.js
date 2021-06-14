@@ -1,23 +1,29 @@
-let person = {
-    Name: 'Karin',
-    Age: 52,
-    Evaluations: Number
-}
-person.Name = "Karin";
-person.Age = 52
+const person = {
+    name: "Karin",
+    age: 52,
+    evaluations: [7, 10, 9],
+};
 
-person['Name'] = 'Bianca';
+console.log(person);
+console.log(person.name);
+console.log(person.age);
+console.log(person["name"]);
+console.log(person["age"]);
+console.log(person.evaluations);
 
-person['Evaluations'] = [7, 10, 9]
+const myArray = ['groen', 'blauw', 'rood'];
+console.log(myArray);
+console.log(myArray.length);
+console.log(myArray[0]);
+console.log(myArray[myArray.length - 1]);
+myArray.push("geel");
+console.log(myArray);
+myArray.push(5);
+console.log(myArray);
+myArray.push({ greeting: "Hi ik ben een object" });
+console.log(myArray);
+console.log(myArray[myArray.length - 1].greeting);
 
-const SelectColors = ['groen', 'blauw', 'rood'];
-SelectColors[1] = 'groen'
-const count = SelectColors.push('geel', { greeting: "hi ik ben een object" });
-SelectColors[5] = 5
-
-const count = SelectColors.push({ greeting: "hi ik ben een object" });
-
-console.log(SelectColors1);
 
 const catBreeds = [{
     name: "Abyssinian",
@@ -65,8 +71,11 @@ const catBreeds = [{
     }
 }
 ]
-Name[cat3] = 'American Bobtail';
-energy_level[cat1] = 5;
-temperament[cat2] = 'affectionate';
-temperament[cat3last] = 'Sensitive';
+console.log(catBreeds[2].name);
+console.log(catBreeds[0].energy_level);
+console.log(catBreeds[1].temperament[0]);
+const lengthTemperamentsCatThree = catBreeds[2].temperament.length;
+console.log(catBreeds[2].temperament[lengthTemperamentsCatThree - 1]
+);
+console.log(catBreeds[2].food.favourite_food);
 
